@@ -1,0 +1,113 @@
+/* === Hoja de Estilo === */
+/* === Dispositivo de Escritorio === */
+/* === General === */
+body {background: #292A2D; font-family: 'Roboto', sans-serif;height:100%;}
+.base {width: 100%; height:100%;position: relative;}
+.contenedor {width: 100%; max-width: 1000px; margin: 0 auto; padding: 20px;}
+.lft {float:left; width:175px;}
+header {margin: 0;}
+
+/* === Sidebar === */
+.options{float:right; width: calc(100% - 175px); height: 25px; margin: 0 0 7px 0; font-size:0;}
+.search-bar { float:right;width:200px; margin: 0 0 0 5px;; overflow:hidden; border-radius: 2px; border:1px solid #34868b; box-shadow: 0 1px rgba(0, 0, 0, 0.2);}
+.srin, .srsb {margin: 0; padding: 0 5px; border: 0;}
+.search-bar input[type="text"] {background: #35363A; width: 70%; height: 25px; font-size: 14px; outline: none;}
+.search-bar input[type="submit"]{ background: #35363A; width: 30%; height: 25px; font-size: 14px; cursor: pointer; text-align: center;}
+.support{float:right; margin: 0 0 0 5px; height: 27px; padding: 5px 10px; border-radius: 2px; background: #34868b; box-shadow: 0 1px rgba(0, 0, 0, 0.2); font-size: 14px; text-align: center;}
+aside {margin: 0 0 10px 0; padding: 10px 20px 0 0;}
+nav {overflow: hidden; font-size: 16px;}
+nav hr{border: 0; height: 1px; background-image: linear-gradient(to right,  rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));}
+nav p {color:#F1F3F4;}
+nav a {color:#F9F9F9;}
+nav a, nav p {display:block; font-size:12px; margin-top:6px; text-decoration: none;}
+
+/* === Section/Footer === */
+section {width: calc(100% - 175px); background: #35363A; margin: 0; padding: 25px 25px 12px; float:right; border-radius:2px;}
+footer {background:#34868b; width: 100%; padding: 20px; font-size: 0; clear: both; text-align:left; margin-top:20px;height:120px;}
+.secfoot { float: left; width: 33.33%; padding: 15px;font-size:12px;}
+.firstfoot, .secondfoot {font-size:20px; width:50%; display:inline-block;}
+.secondfoot {float:right; text-align:right;}
+.contador{display:inline-block; vertical-align: top;}
+.thirdfoot{font-size:14px; width:100%;margin-top:20px;}
+
+/* === Formatos Section === */
+section .sa, section a {color: #34868b; text-decoration: none;}
+section h1 {font-size: 24px; display: inline-block;}
+section h2, .post-title {font-size: 22px; display: inline-block;}
+section h3 {font-size: 19px; display: inline-block;}
+section hr, .post-title hr {margin: 2px 0 10px 0;}
+section p {font-size: 16px; padding:0 0 10px 0; text-align: left; line-height: 150%}
+section li {font-size: 16px; text-align: left; line-height: 150%}
+section ul, section ol {margin-left: 20px; padding:0 0 10px 0;}
+
+.btnv {display: inline-block; width: 100%; margin-bottom: 15px;}
+.btnx {background:#444; padding: 10px; float: right;}
+.btpv {background:#444; padding: 10px; float: left;}
+.rfrn li {font-size:12px;}
+
+/* === Formato de Tablas === */
+table {border-collapse: collapse;}
+td, th {border: 1px solid #ddd; padding: 8px;}
+tr:nth-child(even){background-color: #18191a;}
+th {padding: 12px 0; text-align: left; background-color: #34868b;; color: white; width: 20%;}
+
+/* === Formato de Información === */
+.sinf {float:right; width: 30%;} 
+.sinf, .sref {background: rgba(24, 25, 26, 0.25); margin: 5px 20px; padding: 10px; border: 1px solid #292A2D;  border-radius: 2px; box-shadow: 0 1px rgba(0, 0, 0, 0.2);}
+.sinf img {margin: 5px auto; border:0; width:100%; max-width:200px; display:block;}
+.sinf p {background:#292A2D; text-align: center; padding: 5px; display:  block; font-size: 14px;}
+.sl{color: #34868b; font-weight: bold;}
+.seccion {width:100%; max-width:250px; padding: 20px; margin: 10px; background: #205457; display: inline-block; vertical-align: top; border-radius: 5px;}
+.seccion a{display: block;}
+
+/* === Formato de Raíz de Blogger === */
+.date-header{font-size:12px; text-align: right; margin: 0 0 10px 0;}
+.btbasic {margin: 0 0 0 10px; padding:5px 10px; border-radius: 2px; background: #34868b; box-shadow: 0 1px rgba(0, 0, 0, 0.2);text-decoration: none;}
+
+/* === Formato de Páginas Personalizadas (Tópico) === */
+.bx-banner div, .bx-grid div { border-radius: 2px; border: 1px solid #18191a; padding: 10px 17px; box-shadow: 0 1px rgba(0, 0, 0, 0.2); background: rgba(24, 25, 26, 0.25);}
+.bx-banner{grid-column: 1/3;}
+.bx-grid {margin: 10px; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto; gap: 10px;}
+.phne{display: none;}
+
+/* === Formato de Navegación === */
+
+.navs {padding: 10px 0; border-radius: 10px; overflow: hidden; }
+
+
+/* === Dispositivo Móvil === */
+@media screen and (max-width: 700px){
+.contenedor {padding: 0; margin: 0;width:100%;}
+.lft { width: 100%; margin: 0; padding: 0; font-size:0;}
+header { margin: 0; padding: 10px; border-radius: 0; width: 90%;display:inline-block;}
+.phne { display: inline-block; width: 10%;vertical-align: top; font-size: 24px; text-align: center;padding: 10px;}
+/* === *** === */
+section{margin: 0; padding:10px; width: 100%; border-radius: 0px;}
+.sinf {float:left; width: 60%; margin: 20px 20%;}
+aside{ display: none;}
+/* === *** === */
+footer{margin: 0; padding: 10px; border-radius: 0px;height:180px;}
+.secfoot{width:100%;}
+/* === *** === */
+table{font-size:12px;}
+.bx-banner{grid-column: 1/1;}
+.bx-grid {grid-template-columns: 1fr;}
+
+.options{width: 100%; border:none; margin: none; padding: none; margin: 0 0 10px 0; height:35px;}
+.support{margin: 0 7px; width: calc(35% - 28px); height:35px;padding: 10px 5px;}
+.search-bar {float:left; margin: 0 7px; width:65%; height:35px;}
+.search-bar input[type="submit"], .search-bar input[type="text"]{height:35px;}
+}
+
+
+/* === General Global === */
+* {margin: 0; padding: 0; box-sizing: border-box; color: #e0e2e7;}
+a{text-decoration: none;}
+a:hover{text-decoration: underline;}
+
+
+/* === Cookies Style === */
+#cajacookies {display: none; background: rgba(255, 255, 204, 0.1); border: 2px solid rgba(255, 193, 1, 0.25); border-radius: 2px; padding: 10px; margin-bottom: 10px; width: 100%;}
+#cajacookies p, #cajacookies a {font-size: 14px; display:inline-block;}
+.cookies {float: right; height: 25px; padding: 2.5px 10px; border-radius: 2px; background: #34868b; box-shadow: 0 1px rgba(0, 0, 0, 0.2); text-align: center; width: 150px; cursor: pointer;}
+.cookies a {color: #fff;}
